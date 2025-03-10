@@ -6,17 +6,21 @@
     <meta name="author" content="Woody Li">
     <meta name="Keywords" content="Carnegie Mellon University, Information Systems">
     <meta name="description" content="Woody Li professional website">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Woody Li</title>
 </head>
 
 <body style="font-family: Arial">
     <header>
-        <h1>Woody Li</h1>
+        <h1 id="webname">Woody Li</h1>
         <nav>
-            <a href="../index.html">Home</a>
-            <a href="cv.html">CV</a>
-            <a href="contact.html">Contact me</a>
-            <a href="fun.html">For fun</a>
+            <a class="top" href="../index.html">Home</a>
+            <a class="top" href="cv.html">CV</a>
+            <a class="top" href="fun.html">For fun</a>
+            <a class="top" href="contact.html">Contact me</a>
         </nav>
     </header>
 
@@ -29,10 +33,14 @@
             <input type="text" id="email" name="email">
             <label for="comment">Your comment:</label>
             <textarea id="comment" name="comment"></textarea> 
-            <input type="submit">
+            <input id="button" type="submit">
         </form>
 
         <table>
+            <tr>
+                <th>Contact Method</th>
+                <th>Description</th>
+            </tr>
             <tr>
                 <td>Email</td>
                 <td>wuli@andrew.cmu.edu</td>

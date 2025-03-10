@@ -1,0 +1,48 @@
+* {font-family: "Roboto", sans-serif; 
+    padding: 5px; 
+    margin: 5px; 
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    }
+
+header {
+    color: rgb(63, 55, 154);
+}
+
+#webname {
+    background-color: #d4d4d4ea;
+}
+
+a.top {
+    text-decoration: none;
+    color: #4d66c0;
+    margin-right: 15px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgb(247, 238, 159);
+    color: darkblue;
+    width: fit-content;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+form > * {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+form > #button {
+    background-color: rgb(208, 245, 198);
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
