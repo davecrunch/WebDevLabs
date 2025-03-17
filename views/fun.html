@@ -14,7 +14,7 @@
     <title>Woody Li</title>
 </head>
 
-<body style="font-family: Arial">
+<body onload="addYear()" style="font-family: Arial">
     <header>
         <h1 id="webname">Woody Li</h1>
         <nav>
@@ -27,7 +27,8 @@
 
     <div class="main">
         <h2>Things I love to do for fun</h2>
-        <ul>
+        <button onclick="showList()" id="funButton">Click to find out</button>
+        <ul style="display: none;" id="funList">
             <li>Play bass guitar</li>
             <li>Listen to songs</li>
             <li>Play basketball</li>
@@ -36,6 +37,8 @@
         </ul>
     </div>
 
-    <footer>copyright 2025 - designed and coded by Woody Li</footer>
+    <footer>
+        <p id="copyYear">Designed and coded by Woody Li - &copy; </p>  
+    </footer>
 </body>
 </html>

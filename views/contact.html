@@ -11,10 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="../static/script.js" defer></script>
+    
     <title>Woody Li</title>
 </head>
 
-<body style="font-family: Arial">
+<body onload="addYear()" style="font-family: Arial">
     <header>
         <h1 id="webname">Woody Li</h1>
         <nav>
@@ -31,10 +32,11 @@
             <label for="name">Your name: (required)</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Your email:</label>
-            <input type="text" id="email" name="email">
+            <input type="text" id="email" name="email" required>
             <label for="comment">Your comment:</label>
-            <textarea id="comment" name="comment"></textarea> 
-            <input id="button" type="submit">
+            <textarea id="comment" name="comment" required></textarea> 
+            <input id="button" onclick="validate()" type="submit">
+            <div id="validateMsg"></div>
         </form>
 
         <table>
@@ -57,6 +59,8 @@
         </table>
     </div>
 
-    <footer>copyright 2025 - designed and coded by Woody Li</footer>
+    <footer>
+        <p id="copyYear">Designed and coded by Woody Li - &copy; </p>  
+    </footer>
 </body>
 </html>

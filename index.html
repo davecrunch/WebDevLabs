@@ -10,11 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="./static/script.js" defer></script>
+    
     <title>Woody Li</title>
 </head>
 
-<body style="font-family: Arial">
+<body onload="addYear(), showLess()" style="font-family: Arial">
     <header>
         <h1 id="webname">Woody Li</h1>
         <nav>
@@ -36,8 +38,19 @@
             Information Systems and Music Technology. Music has always been my biggest passion
             in life, and I am always curious about how music influences each of us.
         </p>
+       
+        <button onClick="showMore()" id="readMore">Read more</button>
+       
+        <p id="intro2">
+            When "Read More" is clicked, show the full bio and hide the "Read More" button 
+            When "Read Less" is clicked, show the "Read More" button again and hide the extended bio
+        </p>
+        
+        <button onClick = "showLess()" id="readLess">Read less</button>
     </div>
 
-    <footer>copyright 2025 - designed and coded by Woody Li</footer>
+    <footer>
+        <p id="copyYear">Designed and coded by Woody Li - &copy; </p>  
+    </footer>
 </body>
 </html>

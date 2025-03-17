@@ -36,6 +36,7 @@ function findTheBanana(A) {
     }
 }
 
+/*
 findTheBanana(L1);
 findTheBanana(L2);
 
@@ -52,6 +53,22 @@ L2.forEach(function(element, index) {
     }
 });
 
+<script>
+        $(document).ready(function(){
+            $("#readMore").click(function() {
+                $("#readMore").hide();
+                $("#readLess").show();
+            });
+        });
+
+        $(document).ready(function(){
+            $("#readLess").click(function() {
+                $("#readMore").hide();
+                $("#readLess").show();
+            });
+        });
+ </script>
+*/
  
 function greetingFunc() {
     const d = new Date();
@@ -71,3 +88,38 @@ function greetingFunc() {
 }
 
 greetingFunc();
+
+function addYear() {
+    const d = new Date();
+    let y = d.getFullYear();
+    document.getElementById("copyYear").innerHTML += y;
+}
+
+function showList() {
+    document.getElementById("funList").style.display = "block";
+    document.getElementById("funButton").style.display = "none";
+}
+
+function showMore() {
+    $("#readMore").hide();
+    $("#intro2").show();
+    $("#readLess").show();
+}
+
+function showLess() {
+    $("#readMore").show();
+    $("#intro2").hide();
+    $("#readLess").hide();
+}
+
+function validate() {
+    var userName =  document.getElementById("name");
+    var userEmail = document.getElementById("email");
+    var userText = document.getElementById("comment");
+    var msg = document.getElementById("validateMsg");
+
+    if (!userName.checkValidity() || !userEmail.checkValidity() || !userText.checkValidity()) {
+        msg.innerHTML = "Please fill out the form completely";
+        msg.style.color ="red";
+    }
+}
