@@ -95,10 +95,12 @@ function addYear() {
     document.getElementById("copyYear").innerHTML += y;
 }
 
+/*
 function showList() {
     document.getElementById("funList").style.display = "block";
     document.getElementById("funButton").style.display = "none";
 }
+*/
 
 function showMore() {
     $("#readMore").hide();
@@ -122,4 +124,19 @@ function validate() {
         msg.innerHTML = "Please fill out the form completely";
         msg.style.color ="red";
     }
+}
+
+function getAdvice() {
+    fetch("https://api.adviceslip.com/advice")
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("adviceText").innerText=data.slip.advice;
+    })
+    .catch(error => {
+        // If something goes wrong (like no internet), log the error in the console
+        console.error("Error fetching advice:", error);
+        // Display a user-friendly error message on the webpage
+        document.getElementById("adviceText").innerText = "Oops! Something went wrong. Try again.";
+    });
+        
 }

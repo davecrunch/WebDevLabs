@@ -46,3 +46,38 @@ form > #button {
     border-radius: 5px;
     margin-top: 5px;
 }
+
+.item2 img {
+    width: 50%;
+    border-radius: 100%;
+}
+
+.container {
+    display: inline-block; 
+    border-radius: 10%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+.container button {
+    padding: 10px 15px; 
+    border: none; 
+    background-color: #92ad70;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px; 
+    cursor: pointer; 
+    }
+
+.container button:hover {
+    background-color: rgb(94, 132, 71);
+}    
+
+.mainLayout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.item1, .item2, .item3, .item4 {
+    width: 40vw; 
+    margin: auto; 
+}
