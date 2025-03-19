@@ -1,0 +1,83 @@
+* {font-family: "Roboto", sans-serif; 
+    padding: 5px; 
+    margin: 5px; 
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    }
+
+header {
+    color: rgb(63, 55, 154);
+}
+
+#webname {
+    background-color: #d4d4d4ea;
+}
+
+a.top {
+    text-decoration: none;
+    color: #4d66c0;
+    margin-right: 15px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgb(247, 238, 159);
+    color: darkblue;
+    width: fit-content;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+form > * {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+form > #button {
+    background-color: rgb(208, 245, 198);
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.item2 img {
+    width: 50%;
+    border-radius: 100%;
+}
+
+.container {
+    display: inline-block; 
+    border-radius: 10%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+.container button {
+    padding: 10px 15px; 
+    border: none; 
+    background-color: #92ad70;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px; 
+    cursor: pointer; 
+    }
+
+.container button:hover {
+    background-color: rgb(94, 132, 71);
+}    
+
+.mainLayout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.item1, .item2, .item3, .item4 {
+    width: 40vw; 
+    margin: auto; 
+}
