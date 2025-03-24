@@ -1,0 +1,60 @@
+
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.mainImg {
+    grid-area: mainImg;
+}
+
+.mainText {
+    grid-area: mainText;
+}
+
+.bottomText {
+    grid-area: bottomText;
+}
+
+.footer {
+    grid-area: Footer;
+}
+
+
+@media screen and (min-width: 768px) {
+    .containers {
+        display: grid;
+        grid-template-areas: 
+        'header header'
+        'nav    nav'
+        'mainImg mainText'
+        'bottomText bottomText'
+        'Footer Footer'
+    ;
+    }
+
+    .nav i{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .containers {
+        grid-template-areas: 
+        'header'
+        'nav'
+        'mainImg' 
+        'mainText'
+        'bottomText'
+        'Footer'
+    ;
+    }
+    .nav a{
+        display: none;
+    }
+}

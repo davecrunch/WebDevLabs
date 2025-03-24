@@ -138,5 +138,13 @@ function getAdvice() {
         // Display a user-friendly error message on the webpage
         document.getElementById("adviceText").innerText = "Oops! Something went wrong. Try again.";
     });
-        
+}
+
+function toggle() {
+    console.log("yes");
+    var elements = document.getElementsByClassName("top");
+    for (var i = 0; i < elements.length; i++) {
+        var display = window.getComputedStyle(elements[i]).display;
+        elements[i].style.display = (display === "none") ? "flex" : "none";
+    }
 }
